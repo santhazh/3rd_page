@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>6/9</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,14 +30,14 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>6/9</span>
       </div>
     </div>
   </div>
@@ -132,29 +132,27 @@
 87
 88
 89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+90</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -222,128 +220,103 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-// import React from 'react';
-// import './GovtShoppingPreference.css';
-// import { reduxForm } from 'redux-form';
-// import PropTypes from 'prop-types';
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+// import { Field, reduxForm } from 'redux-form';
+import './GovtShoppingPreference.scss';
+import {
+    Row, Col,
+} from 'react-bootstrap';
+&nbsp;
+/* eslint-disable react/prop-types */
+export class Login extends React.Component {
+    constructor() <span class="fstat-no" title="function not covered" >{</span>
+        super();
+        this.<span class="cstat-no" title="statement not covered" >state = {</span>
+            // recaptchaVerified: false,
+        };
+    }
 &nbsp;
 &nbsp;
-// class Chkboxlist extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {};
-//         props.values.map((v, i) =&gt; {
-//             this.state[v] = false;
-//         });
-//     }
+    render() <span class="fstat-no" title="function not covered" >{</span>
+        const { <span class="cstat-no" title="statement not covered" >nextPage } = this.props;</span>
+        return (
+<span class="cstat-no" title="statement not covered" >            &lt;div className="containInnerWrap"&gt;</span>
+                &lt;div className="loginBoxWrap"&gt;
+                    &lt;div className="loginBox"&gt;
+                        &lt;form onSubmit={nextPage}&gt;
+                            &lt;Row&gt;
+                                &lt;Col className="otpFirst" sm={12} lg={12}&gt;
+                                To help us verify identity and protect your private information, a
+                                confirmation code will be sent to your phone or email.
+                                &lt;/Col &gt;
+                            &lt;/Row&gt;
+                            &lt;Row&gt;
+                                &lt;Col sm={12} lg={12}&gt;
+                                Send the code:
+                                &lt;/Col&gt;
+                                &lt;Col sm={12} lg={12}&gt;
+                                    &lt;div className="radio"&gt;
+                                        &lt;label&gt;
+                                            &lt;input type="radio" name="optradio" checked/&gt;
 &nbsp;
-//     onChange(key, value) {
-//         this.setState({ [key]: value }, (state) =&gt; {
-//             this.props.onChange(this.state);
-//         });
-//     }
+To my phone via text message or voice call
+                                            {' '}
+                                            &lt;div className="sendcode"&gt;send code to :&lt;/div&gt;
+                                            &lt;div&gt;send code via&lt;/div&gt;
+                                            &lt;div className="radio"&gt;
+                                                &lt;label&gt;
+                                                    &lt;input type="radio" name="optradio" checked/&gt;
+Text message (message and data rates may apply)
+                                                &lt;/label&gt;
 &nbsp;
-//     render() {
-//         return (
-//             &lt;ul className="ShoppingPreferenceList"&gt;
-//                 {this.props.values.map((value, i) =&gt; (
-//                     &lt;li className="checkboxWrap" key={i}&gt;
-//                         &lt;label className="checkopt"&gt;
-//                             &lt;input
-//                                 onChange={e =&gt; this.onChange(value, e.target.checked)}
-//                                 type="checkbox"
-//                                 value={this.state[value]}
-//                             /&gt;
-//                             {value}
-//                         &lt;/label&gt;
-//                     &lt;/li&gt;
-//                 ))}
-//             &lt;/ul&gt;
-//         );
-//     }
-// }
+                                            &lt;/div&gt;
+                                            &lt;div className="radio"&gt;
+                                                &lt;label&gt;
+                                                    &lt;input type="radio" name="optradio"/&gt;
+Voice call
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                        &lt;/label&gt;
 &nbsp;
+                                    &lt;/div&gt;
+                                    &lt;div className="radio"&gt;
+                                        &lt;label&gt;
+                                            &lt;input type="radio" name="optradio"/&gt;
+To my email address at something@gmail.com
+                                        &lt;/label&gt;
+                                    &lt;/div&gt;
 &nbsp;
-// export class GovtShoppingPreference extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {};
-//     }
-&nbsp;
-//     onChange(name, values) {
-//         this.setState({ [name]: values });
-//     }
-&nbsp;
-//     render() {
-//         const productslist = ['Office supplies', 'Cleaning &amp; Janitorial', 'Building Materials', 'Electrical', 'Outdoor Equipment', 'Plumbing', 'Hardware', 'Tools', 'Furniture', 'Safety &amp; Security'];
-//         const {
-//             handleSubmit, submitting, previousPage,
-//         } = this.props;
-//         return (
-//             &lt;div className="MidContentWrap"&gt;
-//                 &lt;div className="formOutterWrap"&gt;
-//                     &lt;h2 className="titleTxt_2"&gt;What type of products do you shop for ?&lt;/h2&gt;
-&nbsp;
-&nbsp;
-//                     &lt;form onSubmit={handleSubmit} className="form-style"&gt;
-//                         &lt;Chkboxlist onChange={values =&gt; this.onChange('speak', values)} values={productslist} /&gt;
-&nbsp;
-//                         &lt;div className="BottomField"&gt;
-//                             &lt;div className="terms"&gt;
-//                             By clicking finish you agree to user &amp;nbsp;
-//                                 {' '}
-//                                 &lt;a href="https://help.overstock.com/help/s/article/TERMS-AND-CONDITIONS"&gt;Terms &amp; Conditions &lt;/a&gt;
-//                             &lt;/div&gt;
-&nbsp;
-//                             &lt;div className="formBtnWrap"&gt;
-//                                 &lt;button className="formBtn" type="submit" onClick={previousPage} &gt;Back&lt;/button&gt;
-//                                 &lt;button className="formBtn" type="submit" disabled={submitting}&gt;Finish&lt;/button&gt;
-//                             &lt;/div&gt;
-//                         &lt;/div&gt;
-//                     &lt;/form&gt;
-//                 &lt;/div&gt;
-&nbsp;
-//             &lt;/div &gt;
-//         );
-//     }
-// }
-&nbsp;
-// GovtShoppingPreference.propTypes = {
-//     handleSubmit: PropTypes.func.isRequired,
-//     submitting: PropTypes.bool.isRequired,
-//     previousPage: PropTypes.bool.isRequired,
-// };
-&nbsp;
-// export default reduxForm({
-//     form: 'Govt', // a unique identifier for this form
-//     destroyOnUnmount: false,
-//     forceUnregisterOnUnmount: true, // &lt;------ unregister fields on unmount
-// })(GovtShoppingPreference);
+                                &lt;/Col&gt;
+                            &lt;/Row&gt;
+                            &lt;Row&gt;
+                                &lt;Col className="otpFirst" sm={12} lg={12}&gt;
+                                    &lt;div className="form-group"&gt;
+                                        &lt;button
+                                            type="submit"
+                                            className="btnSignIn"
+                                          
+                                        &gt;
+Send confirmation Code
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+                                &lt;/Col &gt;
+                            &lt;/Row&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+export default Login;
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Sep 04 2018 20:28:47 GMT+0530 (India Standard Time)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Sep 03 2018 18:34:43 GMT+0530 (India Standard Time)
 </div>
 </div>
 <script src="../../../../prettify.js"></script>

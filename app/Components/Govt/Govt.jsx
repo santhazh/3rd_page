@@ -46,13 +46,13 @@ class Govt extends React.Component {
                     && (
                         <GovtShoppingPreference
                             previousPage={this.previousPage}
-                            onSubmit={this.nextPage} />
+                            nextPage={this.nextPage} />
                     )}
                   {currentStep.id === 2
                     && (
                         <LoginOtpVerify
                             previousPage={this.previousPage}
-                            onSubmit={this.nextPage} />
+                            nextPage={this.nextPage} />
                     )}
               </div>
           </Grid>

@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for app\Components\HomePage\HomePage.jsx</title>
+    <title>Code coverage report for app\Components\Govt\LoginOtpVerify\LoginOtpVerify.jsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../prettify.css" />
-    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../../sort-arrow-sprite.png);
+            background-image: url(../../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../../index.html">all files</a> / <a href="index.html">app/Components/HomePage/</a> HomePage.jsx
+      <a href="../../../../index.html">all files</a> / <a href="index.html">app/Components/Govt/LoginOtpVerify/</a> LoginOtpVerify.jsx
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>13/13</span>
+        <span class='fraction'>6/9</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/3</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>13/13</span>
+        <span class='fraction'>6/9</span>
       </div>
     </div>
   </div>
@@ -71,17 +71,9 @@
 26
 27
 28
-29
-30
-31
-32
-33
-34
-35
-36</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
+29</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -90,64 +82,51 @@
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2×</span>
-<span class="cline-any cline-yes">2×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Fragment } from 'react';
-import Background from '../../../assets/Images/home.png';
-import ModalPopup from '../Model/SuccessPopup';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+// import { Field, reduxForm } from 'redux-form';
+import './LoginOtpVerify.scss';
+import {
+    Row, Col,
+} from 'react-bootstrap';
 &nbsp;
-const bgStyle = {
-    width: '100%',
-    float: 'left',
-};
 &nbsp;
-class HomePage extends React.Component {
-    constructor() {
+export class LoginOtpVerify extends React.Component {
+    constructor() <span class="fstat-no" title="function not covered" >{</span>
         super();
-        this.state = ({ isModalAppear: true });
+        this.<span class="cstat-no" title="statement not covered" >state = {</span>
+            // recaptchaVerified: false,
+        };
     }
 &nbsp;
-    closeModel = () =&gt; {
-        // history.push('./home');
-        console.log('clicked');
-        this.setState({ isModalAppear: false });
-    }
 &nbsp;
-    render() {
-        const { isModalAppear } = this.state;
+    render() <span class="fstat-no" title="function not covered" >{</span>
+        const { <span class="cstat-no" title="statement not covered" >nextPage } = this.props;</span>
+        
         return (
-            &lt;Fragment&gt;
-                &lt;img src={Background} alt="home background" style={bgStyle} onClick={this.closeModel} id="bgImg"/&gt;
-                &lt;div&gt;
-                    {isModalAppear &amp;&amp; &lt;ModalPopup show={isModalAppear} successignup={1} bodycontent="You have successfully created your Overstock Professional account." onHide={this.closeModel} /&gt;}
-                &lt;/div&gt;
-            &lt;/Fragment&gt;
+<span class="cstat-no" title="statement not covered" >            &lt;div className="containInnerWrap"&gt;</span>
+               3rd page
+            &lt;/div&gt;
         );
     }
 }
-&nbsp;
-export default HomePage;
+export default LoginOtpVerify;
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
@@ -157,7 +136,7 @@ export default HomePage;
   generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Sep 03 2018 18:34:43 GMT+0530 (India Standard Time)
 </div>
 </div>
-<script src="../../../prettify.js"></script>
+<script src="../../../../prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -165,6 +144,6 @@ window.onload = function () {
         }
 };
 </script>
-<script src="../../../sorter.js"></script>
+<script src="../../../../sorter.js"></script>
 </body>
 </html>

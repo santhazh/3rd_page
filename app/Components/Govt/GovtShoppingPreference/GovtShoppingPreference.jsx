@@ -16,12 +16,12 @@ export class Login extends React.Component {
 
 
     render() {
-        const { nextPage, handleSubmit } = this.props;
+        const { nextPage } = this.props;
         return (
             <div className="containInnerWrap">
                 <div className="loginBoxWrap">
                     <div className="loginBox">
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={nextPage}>
                             <Row>
                                 <Col className="otpFirst" sm={12} lg={12}>
                                 To help us verify identity and protect your private information, a
@@ -72,7 +72,7 @@ To my email address at something@gmail.com
                                         <button
                                             type="submit"
                                             className="btnSignIn"
-                                            onClick={nextPage}
+                                          
                                         >
 Send confirmation Code
                                         </button>
